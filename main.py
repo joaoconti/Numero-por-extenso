@@ -5,7 +5,6 @@ def numeros_extensos(numero_indice, tabela, indice):
     resultado = ''
     for k, v in tabela.items():
         k = str(k)
-
         if numero_indice == k[indice]:
             resultado = v
             return resultado
@@ -33,6 +32,7 @@ while True:
                 continue
 
             resultado.append('e')
+            
             callbeck_dois_digitos = numeros_extensos(numero[1], dois_digitos, 0)
             resultado.append(callbeck_dois_digitos)
 
